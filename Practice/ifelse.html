@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>IF_ELSE control statement in javascript</title>
+        <script type="text/javascript">
+            /*
+            1. Find whether is number is even or odd
+            2. Find if a number is positive, negative or 0
+            3. Find if a number is positive and even
+            */
+
+            document.write("<h1>IF_ELSE control statement in javascript</h1>")
+            var a = 11;
+            if (a%2 == 0)
+                document.write("<h3>"+a+" is even number</h3>")
+            else
+                document.write("<h3>"+a+" is odd number</h3>")
+            
+            
+            var b = 25
+            if (b < 0)
+                document.write("<h3>"+b+" is Negative Number.</h3>")
+            else if (b == 0)
+                document.write("<h3>You have entered "+b+"</h3>")
+            else    
+                document.write("<h3>"+b+" is Positive Number.</h3>")
+
+            var c = 12
+            if (c == 0)
+                document.write("<h3>You have entered "+c+"</h3>")
+            else if (c>0 && c%2 == 0)
+                document.write("<h3>"+c+" is Positive and Even Number.</h3>")
+            else if (c>0 && c%2 !=0)
+                document.write("<h3>"+c+" is Positive and Odd Number.</h3>")
+            else
+                document.write("<h3>"+c+" is Negative Number.</h3>")
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

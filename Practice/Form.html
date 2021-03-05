@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align:center;">Registration Form</h1><br>
+
+    <form oninput="total.value=parseInt(num1.value)+parseInt(num2.value)">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <h3>
+                <label for="fname">First Name: &nbsp;</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last Name: &nbsp;</label>
+                <input type="text" id="lname" name="lname"><br><br>
+
+                <label for="bday">Date of Birth: &nbsp;</label>
+                <input type="date" id="bday" name="bday"><br><br>
+
+                <label for="gender">Gender: &nbsp;</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+
+                <label for="address">Address: &nbsp;</label>
+                <textarea name="address" id="story" cols="50" rows="5"></textarea><br><br>
+
+                <label for="hobbies">Hobbies: </label><br>&nbsp;
+                <input type="checkbox" id="hobbies" name="hobby1">
+                <label for="hobby1">Gardening</label><br>&nbsp;
+                <input type="checkbox" id="hobbies" name="hobby2">
+                <label for="hobby2">Camping</label><br>&nbsp;
+                <input type="checkbox" id="hobbies" name="hobby3">
+                <label for="hobby3">Cooking</label><br>&nbsp;
+                <input type="checkbox" id="hobbies" name="hobby4">
+                <label for="hobby4">Drawing</label><br>&nbsp;
+                <input type="checkbox" id="hobbies" name="hobby5">
+                <label for="hobby5">Writing</label><br><br><br>
+
+                <label for="pswd">Password:
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="password" name="pswd" id="pswd"><br><br>
+                <label for="cpswd">Confirm Password: &nbsp;</label>
+                <input type="password" name="cpswd" id="cpswd"><br><br>
+
+                <label for="choose">Choose your intrest: &nbsp;</label>
+                <select name="choose" id="choose">
+                    <option value="Android">Android Development</option>
+                    <option value="iOS">iOS Development</option>
+                    <option value="web">Web Development</option>
+                    <option value="Full">Full Stack Developer</option>
+                </select><br><br>
+
+                0 <input type="range" id="num1" value="50">
+                100+ <input type="number" id="num2" value="30">
+                =
+                <output name="total" for="num1 num2"></output>
+                <br><br>
+
+                <label for="browser">Choose your browser from the list:</label>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist><br><br>
+
+                <input type="submit" value="Submit">
+            </h3>
+        </fieldset><br>
+        <hr><br>
+        <iframe src="https://www.youtube.com/embed/beqprrnaKFc" height="800" width="1200"></iframe>
+        <br><br>
+        <audio controls>
+            <source src="E:\UC Songs\Tera Baap Aaya - Commando 3.mp3" type="audio/mpeg">
+        </audio>
+
+
+    </form>
+</body>
+
+</html>
