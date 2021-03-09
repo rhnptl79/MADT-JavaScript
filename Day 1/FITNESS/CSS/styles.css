@@ -105,6 +105,7 @@ footer{
     }
 } */
 
+/* media query for the tablet */
 @media only screen and (min-width: 481px){
     /* styles for li in inside nav */
     nav li{
@@ -116,4 +117,54 @@ footer{
         padding-right: 0;
         width: 18%;        
     }
+
+    /* styles for the main element */
+    main{
+        clear: left;
+        margin-top: 4em;
+    }
+
+    /* hiding mobile class */
+    .mobile{
+        display: none;
+    }
+
+    /* display desktop clas */
+    .desktop{
+        display: inline;
+    }
+
+    /* display quip class img/content */
+    .equip{
+        display: inline;
+        float: left;
+        margin-right: 1.5em;
+    }
+
+    h1{
+        clear: left;
+    } 
+
+    /* display items class */
+    .items{
+        display: block;
+        list-style-position: inside;
+        margin-bottom: 8em;
+    }
+
+    /* display class tablet */
+    .tablet{
+        display: block;
+    }
+
+    dt{
+        font-weight: bold;
+        margin-top: 0.7em;
+    }
 }
+
+
+
+
+
+
