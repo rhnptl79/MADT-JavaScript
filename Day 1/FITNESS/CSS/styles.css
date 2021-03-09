@@ -175,7 +175,7 @@ footer a{
         background-color: #1d1d1c;
         display: inline;
         height: 8em;
-        width: calc(100% / 3 - 4%);
+        width: calc(100% / 3 - 5%);
         /* width: 28%; */
         margin: 1%;
         padding: 1%;
@@ -187,7 +187,7 @@ footer a{
         padding: 0;
         text-decoration: none;
     }
-    
+
     /* display items class */
     .items{
         display: block;
@@ -210,7 +210,8 @@ footer a{
 @media only screen and (min-width: 900px){
     /* style for the container id */
     #container{
-        width: 80%;
+        /* width: 80%; */
+        background-color: #1d1d1c;
     }
 
     /* styles for the ul inside the nav */
@@ -222,9 +223,9 @@ footer a{
 
     /* styles for the li inside the nav */
     nav li{
-        border-radius: 0;
+        /* border-radius: 0;
         border-top: solid black;
-        border-bottom: solid black;
+        border-bottom: solid black; */
         margin-left: 0;
         margin-right: 0;
         padding: 0;
@@ -239,6 +240,7 @@ footer a{
     nav li a{
         display: inline-block;
         padding: 0.7em;
+        text-shadow: 0.2em 0.2em 0.1em #3d3d35;
     }
 
     /* styles for the main */
@@ -247,12 +249,16 @@ footer a{
         box-shadow: 0.5em 0.5em 0.5em #404040;
         margin-bottom: 1em;
         margin-top: 1em;
+        background-color: #1d1d1c;
     }
 
     main p{
         padding-left: 0.5em;
         padding-right: 0.5em;
-
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
     }
 
     /* styles for the item class */
@@ -266,11 +272,11 @@ footer a{
     }
 
     nav li a:visited{
-        color: #0f9;
-    }
+        color: #ccf;
+      }
 
     nav li a:hover{
-        color: #ff0;
+        color: #9d9d93;
         font-style: italic;
     }
     nav li a:active{
@@ -278,10 +284,46 @@ footer a{
     }
 
     body{
-        background: linear-gradient(#fff 60%,#ff9);
-        background-attachment: fixed;
+        /* background: linear-gradient(#fff 60%,#ff9); */
+        /* background-attachment: fixed; */
+        background: white;
     }
-    
+
+    /* styles for header of desktop viewport */
+    header{
+        text-align: right;
+    }
+
+    /* style for the nav */
+    nav {
+        float: left;
+        margin-top: -7em;
+        margin-bottom: 0;
+        width: 60%;
+    }
+
+    /* style for the img inside the figure */
+    figure img{
+        height: 15em;
+        opacity: 0.7;
+    }
+
+    /* sudo class for the links inside figure */
+    figure img:hover{
+        opacity: 1;
+        /* cursor: pointer; */
+    }
+
+    h1{
+        color: white;
+    }
+
+    /* style for the footer */
+    footer{
+        background-color: 2a2a2a;
+        margin-top: -0.2em;
+        padding: 2em;
+    }
 }
 
 
