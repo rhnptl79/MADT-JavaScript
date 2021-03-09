@@ -106,7 +106,7 @@ footer{
 } */
 
 /* media query for the tablet */
-@media only screen and (min-width: 481px){
+@media only screen and (min-width: 700px){
     /* styles for li in inside nav */
     nav li{
         display: inline;
@@ -115,7 +115,8 @@ footer{
         margin-right: 1%;
         padding-left: 0;
         padding-right: 0;
-        width: 18%;        
+        width: 18%;  
+        white-space: nowrap;      
     }
 
     /* styles for the main element */
@@ -149,7 +150,7 @@ footer{
     .items{
         display: block;
         list-style-position: inside;
-        margin-bottom: 8em;
+        margin-bottom: 6em;
     }
 
     /* display class tablet */
@@ -162,6 +163,94 @@ footer{
         margin-top: 0.7em;
     }
 }
+
+/* media query for the desktop view port */
+@media only screen and (min-width: 900px){
+    /* style for the container id */
+    #container{
+        width: 80%;
+    }
+
+    /* styles for the ul inside the nav */
+    nav ul{
+        margin: 0;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+
+    /* styles for the li inside the nav */
+    nav li{
+        border-radius: 0;
+        border-top: solid black;
+        border-bottom: solid black;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 20%;
+    }
+
+    /* nav li:nth-of-type(5) a{
+        color: black;
+    } */
+
+    /* styles for the links in the li in nav */
+    nav li a{
+        display: inline-block;
+        padding: 0.7em;
+    }
+
+    /* styles for the main */
+    main{
+        border-radius: 0.5em;
+        box-shadow: 0.5em 0.5em 0.5em #404040;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    main p{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+
+    }
+
+    /* styles for the item class */
+    .items{
+        margin-bottom: 7em;
+    }
+
+    /* styles for the links inside the nav */
+    nav li a:link{
+        color: white;
+    }
+
+    nav li a:visited{
+        color: #0f9;
+    }
+
+    nav li a:hover{
+        color: #ff0;
+        font-style: italic;
+    }
+    nav li a:active{
+         color: #660;
+    }
+
+    body{
+        background: linear-gradient(#fff 60%,#ff9);
+        background-attachment: fixed;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
