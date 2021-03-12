@@ -118,6 +118,65 @@ footer a{
     display: none;
 }
 
+/* style for the aside element */
+aside{
+    font-style: italic;
+}
+
+
+/* style for input, textearea etc */
+input, select, textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+/* style for the label */
+label {
+    display: block;
+}
+
+/* styel for the ul inside the form */
+form ul {
+    list-style-type: none;
+}
+
+.chkbx {
+    display: inline-block;
+}
+
+.gender label {
+    text-align: left;
+    color: #000;
+}
+
+.gender {
+    display: flex;
+}
+
+fieldset {
+    display: inline-block;
+    padding: 1em;
+}
+
+fieldset section {
+    padding-bottom: 0;
+}
+
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form-btn input {
+    display: inline-block;
+    margin-right: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #9d9d93;
+    border-radius: 1em;
+    color: #fff;
+    border: none;
+}
+
 /* @media (orientation: landscape) {
     body{
         background-color: cyan;
@@ -146,6 +205,7 @@ footer a{
         /* margin-top: 4em; */
         border-radius: 0;
         margin-top: -0.3em;
+        overflow: auto;
     }
 
     /* hiding mobile class */
@@ -167,7 +227,7 @@ footer a{
 
     h1{
         clear: left;
-        text-align: center;
+        /* text-align: center; */
     } 
 
     /* style for the images inside figure */
@@ -192,18 +252,110 @@ footer a{
     .items{
         display: block;
         list-style-position: inside;
-        margin-bottom: 6em;
+        /* margin-bottom: 6em; */
     }
 
     /* display class tablet */
     .tablet{
         display: block;
+        margin-top: -3em;
+        margin-bottom: -1em;
     }
 
     dt{
         font-weight: bold;
         margin-top: 0.7em;
     }
+
+    section{
+        padding-bottom: 3em;
+    }
+
+    /* style for the h1 inside the section element */
+    section h1{
+        text-align: left;
+    }
+
+    /* style regarding links inside the section elemtn */
+    section a{
+        padding: 0;
+        background-color: transparent;
+        color: #1d1d1c;
+        font-weight: normal;
+        text-decoration: underline;
+        font-weight: normal;
+    }
+
+    /* style for the contact class */
+    .conatct{
+        background-color: transparent;
+        color: #1d1d1c;
+        padding: 0;
+        text-decoration: underline;
+    }
+
+    /* styles for the article element */
+    article{
+        background-color: #c1d9ca;
+        float: left;
+        margin: 0.5%;
+        padding: 0.5%;
+        /* width: 31%; */
+        width: calc((100% - 6%) / 3);
+        text-align: left;
+        border-radius: 1em;
+    }
+
+    article h2{
+        margin-left: 1em;
+    }
+
+    /* style for the images inside the article in main */
+    main article img{
+        border: solid 0.1em #1d1d1c;
+        margin-left: auto;
+        margin-right: auto;    
+    }
+
+    /* style for the p inside the article */
+    article p{
+        margin-top: 2%;
+        padding: 1%;
+        /* color: #000; */
+    }
+
+    /* style for aside element */
+    aside{
+        background-color: white;
+        border-radius: 0 5em 5em 5em;
+        box-shadow: 1em 1em 1em #4c4f4d;
+        padding: 1.5em;
+        margin: 1em;
+    }
+
+    /* style for the label */
+    label  {
+        float: left;
+        padding-right: 0.5em;
+        text-align: right;
+        width: 10em;
+    }
+
+    form #form-btn {
+        text-align: center;
+    }
+
+    form ul {
+        text-align: left;
+    }
+    /* style for the btn class */
+    /* #form-btn {
+        margin-left: 8em;
+    } */
+
+    /* .flex-container{
+        display: flex;
+    } */
 }
 
 /* media query for the desktop view port */
@@ -316,6 +468,7 @@ footer a{
 
     h1{
         color: white;
+        text-align: center;
     }
 
     /* style for the footer */
@@ -324,20 +477,59 @@ footer a{
         margin-top: -0.2em;
         padding: 2em;
     }
+
+    /* styles regarding section element */
+    section{
+        color: white;
+        margin-left: 1em;
+        padding-bottom: 5em;
+        margin-top: 2em;
+    }
+
+    section:first-of-type{
+        margin-top: 0;
+    }
+
+    section a{
+        color: white;
+    }
+
+    section p{
+        margin-left: 0;
+    }
+
+    main h2{
+        color: white;
+    }
+
+    .conatct{
+        color: white;
+    }
+
+    /* styles for the h2 inside the article */
+    main article h2{
+        color: #000;
+    }
+
+    article{
+        color: #000;
+        text-align: center;
+    }
+
+    article p{
+        color: #000;
+
+    }
+
+    /* style for the form */
+    form{
+        background-color: white;
+        padding: 1em;
+    }
+
+    form p{
+        color: black;
+    }
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

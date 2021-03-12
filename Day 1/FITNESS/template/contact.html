@@ -15,7 +15,7 @@
         <!--This is the are that is used for the website name and logo.-->
         <header>
             <a href="F:\MADT JavaScript\Day 1\FITNESS\index.html"><img
-                    src="F:\MADT JavaScript\Day 1\FITNESS\Iamges\ffc_logo.png" alt="The Club Logo"></a>
+                    src="F:\MADT JavaScript\Day 1\FITNESS\images resources\images\ffc_logo.png" alt="The Club Logo"></a>
         </header>
 
         <!-- The area use for the hyperlinks -->
@@ -33,23 +33,75 @@
         <!-- The are used for the content of the page -->
         <main>
             <h2>Ready to get started? Contact us today.</h2>
+            <h2>Complete the form below to begiin your free trial!</h2>
+            <form>
+                <fieldset>
+                    <legend>Please fill the following form</legend>
+                    <label for="fName">First Name:</label>
+                    <input type="text" name="fName" id="fName">
+                    <label for="lName">Last Name:</label>
+                    <input type="text" name="lName" id="lName">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small>Format: 123-456-7890</small>
+                    <section>
+                        <p class="gender">Gender:</p>
+                        <div class="gender"><input type="radio" name="gender" id="female" value="female"
+                                class="radio"><label for="female" class="radio">Female</label></div>
+                        <div class="gender"><input type="radio" name="gender" id="male" value="male"
+                                class="radio"><label for="male" class="radio">Male</label></div>
+                    </section>
+                    <p>I woudl like to receive information about: </p>
+                    <ul>
+                        <li><input type="checkbox" name="grpft" value="grpft" class="chkbx" id="grpft">Group Fitness
+                        </li>
+                        <li><input type="checkbox" name="prtrain" id="prtrain" value="prtrain" class="chkbx">Personal
+                            Training</li>
+                        <li><input type="checkbox" name="nutr" id="nutr" value="nutr" class="chkbx">Nutrition</li>
+                    </ul>
+                    <label for="reference">Referal Source:</label>
+                    <select name="reference" id="reference">
+                        <option value="ad">Advertisement</option>
+                        <option value="friend">Friend</option>
+                        <option value="google">Google</option>
+                        <option value="social">Social</option>
+                        <option value="other" selected>Other</option>
+                    </select>
+                    <label for="question">Question?</label>
+                    <textarea name="question" id="question" cols="25" rows="3"></textarea>
+
+                    <div id="form-btn">
+                        <input type="submit" id="submit" class="btn" value="Submit">
+                        <input type="reset" id="reset" class="btn" value="Reset">
+                    </div>
+                </fieldset>
+            </form>
             <p>
                 We are located at: <br>
                 34334 Bloom court <br>
                 locaket, GA 65524
             </p>
 
-            <p>
+            <p>Phone Number</p>
+            <p><a class="mobile" href="tel:8145559608">(814)555-9608</a>
+                <span class="desktop">(814)555-9608</span>
+            </p>
+            <!-- <p>
                 Phone number <br>
                 <a class="mobile" href="tel:8145559608">(814)555-9608</a>
                 <span class="desktop">(814)555-9608</span>
-            </p>
+            </p> -->
 
-            <p>
+            <p>Email Address</p>
+            <p><a class="contact" href="mailto:fitness@club.com">fitness@club.com</a></p>
+
+            <!-- <p>
                 Email Address <br>
                 <a href="mailto:fitness@club.com">fitness@club.com</a>
 
-            </p>
+            </p> -->
         </main>
 
         <!-- The are for the footer content -->
